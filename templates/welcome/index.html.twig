@@ -1,11 +1,7 @@
-<html>
-<head>
-    <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
-</head>
+{% extends 'base.html.twig' %}
+{% block title %} exploring symfony 4 {% endblock %}
 
-<body>
-<p>
-    let's explore symphony 4
-</p>
-</body>
-</html>
+{% block main %}
+    {#<a href="{{ path('hello_page/{name}') }}">Go to hello Page</a><br>#}
+    <a href="{{ path('contact') }}">Contact us</a>
+{% endblock %}

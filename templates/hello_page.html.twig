@@ -1,1 +1,13 @@
-Hello, Kelvin David here.
+{% extends 'base.html.twig' %}
+{% block title  %}
+    hello page
+{% endblock %}
+
+{% block main %}
+
+   <div>
+       lovely : {{ some_variable }}
+       hello : {{ name }}
+   </div>
+
+{% endblock %}
